@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Pixcel Studio — Branding, Packaging & Social Media Design</title>
+<meta name="description" content="Pixcel Studio is a graphic design studio working across branding, packaging and social media creatives." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-mark">Pixcel<span>Studio</span></a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact" class="nav-cta">Start a project</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-swatches" aria-hidden="true">
+      <span class="sw sw-coral"></span>
+      <span class="sw sw-cobalt"></span>
+      <span class="sw sw-sunbeam"></span>
+      <span class="sw sw-ink"></span>
+    </div>
+    <div class="hero-inner">
+      <p class="hero-kicker">Graphic design studio</p>
+      <h1 class="hero-title" data-content="site.tagline">We build brands<br>people remember.</h1>
+      <p class="hero-sub" data-content="site.subheading">A graphic design studio working across branding, packaging and social media — for founders who want their work to look like it means it.</p>
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">See the work</a>
+        <a href="#contact" class="btn btn-ghost">Start a project</a>
+      </div>
+    </div>
+    <div class="hero-stats" id="statsRow"></div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-head">
+      <h2>What we do</h2>
+      <p>Three disciplines, one consistent system — so your brand looks like itself everywhere it shows up.</p>
+    </div>
+    <div class="services-grid" id="servicesGrid"></div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <p>A handful of the brands we've helped find their shelf, their feed and their voice.</p>
+    </div>
+    <div class="work-grid" id="workGrid"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <h2>Design that has to work, not just look good.</h2>
+      <p>Pixcel Studio is a small team of designers who treat every project like it has to survive contact with the real world — a crowded shelf, a five-second scroll, a print run that can't be redone. We start with strategy, not mood boards, and we hand over systems your team can actually run with.</p>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials" id="testimonials">
+    <div class="section-head">
+      <h2>What clients say</h2>
+    </div>
+    <div class="testimonials-board" id="testimonialsBoard"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <h2>Have a project in mind?</h2>
+      <p>Tell us what you're building. We reply within two working days.</p>
+      <a class="contact-email" id="contactEmail" href="mailto:hello@pixcelstudio.com">hello@pixcelstudio.com</a>
+      <div class="contact-meta">
+        <span id="contactLocation">Hyderabad, India</span>
+        <span id="contactPhone">+91 98765 43210</span>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <span>© <span id="year"></span> Pixcel Studio. All rights reserved.</span>
+    <div class="footer-links" id="footerSocial"></div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

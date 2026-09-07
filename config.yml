@@ -1,0 +1,87 @@
+# ============================================================
+# Pixcel Studio — CMS configuration (Decap CMS)
+# ============================================================
+# This file controls what shows up in the /admin editing panel
+# and which file it writes to (content/content.json).
+#
+# BEFORE THIS WORKS, YOU MUST SET backend.name AND backend.repo BELOW.
+# See SETUP-GUIDE.md for the full walkthrough.
+
+backend:
+  name: git-gateway      # works with Netlify Identity + Git Gateway (recommended, easiest)
+  branch: main           # change if your default branch has a different name
+
+# If you'd rather log in with a GitHub account directly instead of Netlify Identity,
+# comment out the two lines above and use this instead:
+# backend:
+#   name: github
+#   repo: your-github-username/pixcel-studio     # <-- your repo
+#   branch: main
+
+publish_mode: simple
+media_folder: "images"        # where uploaded images are stored
+public_folder: "/images"
+
+collections:
+  - name: "site"
+    label: "Site Settings"
+    files:
+      - name: "general"
+        label: "General Info"
+        file: "content/content.json"
+        fields:
+          - { label: "Studio Name", name: "site.name", widget: "string" }
+          - { label: "Hero Tagline", name: "site.tagline", widget: "string" }
+          - { label: "Hero Subheading", name: "site.subheading", widget: "text" }
+          - { label: "Contact Email", name: "site.email", widget: "string" }
+          - { label: "Phone", name: "site.phone", widget: "string" }
+          - { label: "Location", name: "site.location", widget: "string" }
+          - { label: "Instagram URL", name: "site.instagram", widget: "string", required: false }
+          - { label: "LinkedIn URL", name: "site.linkedin", widget: "string", required: false }
+          - { label: "Behance URL", name: "site.behance", widget: "string", required: false }
+
+          - label: "Stats Row"
+            name: "stats"
+            widget: "list"
+            fields:
+              - { label: "Number", name: "number", widget: "string" }
+              - { label: "Label", name: "label", widget: "string" }
+
+          - label: "Services"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - label: "Swatch Colour"
+                name: "swatch"
+                widget: "select"
+                options: ["coral", "cobalt", "sunbeam"]
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Deliverables"
+                name: "deliverables"
+                widget: "list"
+                # left as a plain list (no sub-fields) so each entry is stored
+                # as a simple string, matching content.json's format
+
+          - label: "Work / Portfolio"
+            name: "works"
+            widget: "list"
+            fields:
+              - { label: "Client Name", name: "client", widget: "string" }
+              - label: "Category"
+                name: "category"
+                widget: "select"
+                options: ["Branding", "Packaging", "Social Media Creatives"]
+              - { label: "Description", name: "description", widget: "text" }
+              - label: "Tile Size"
+                name: "size"
+                widget: "select"
+                options: ["small", "medium", "large"]
+
+          - label: "Testimonials"
+            name: "testimonials"
+            widget: "list"
+            fields:
+              - { label: "Quote", name: "quote", widget: "text" }
+              - { label: "Client Name", name: "name", widget: "string" }
+              - { label: "Client Role / Company", name: "role", widget: "string" }

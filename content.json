@@ -1,0 +1,52 @@
+{
+  "site": {
+    "name": "Pixcel Studio",
+    "tagline": "We build brands people remember.",
+    "subheading": "A graphic design studio working across branding, packaging and social media — for founders who want their work to look like it means it.",
+    "email": "hello@pixcelstudio.com",
+    "phone": "+91 98765 43210",
+    "location": "Hyderabad, India",
+    "instagram": "https://instagram.com/pixcelstudio",
+    "linkedin": "https://linkedin.com/company/pixcelstudio",
+    "behance": "https://behance.net/pixcelstudio"
+  },
+  "stats": [
+    { "number": "120+", "label": "brands launched" },
+    { "number": "9", "label": "years in practice" },
+    { "number": "34", "label": "packaging lines shipped" },
+    { "number": "6.2M", "label": "social impressions generated" }
+  ],
+  "services": [
+    {
+      "title": "Branding",
+      "swatch": "coral",
+      "description": "Identity systems built from the inside out — strategy, naming support, logo, colour, type and the guidelines to keep it consistent as you grow.",
+      "deliverables": ["Brand strategy & positioning", "Logo & identity system", "Colour & typography", "Brand guidelines"]
+    },
+    {
+      "title": "Packaging",
+      "swatch": "cobalt",
+      "description": "Structural and print-ready packaging design that holds up on a crowded shelf and photographs even better on a phone screen.",
+      "deliverables": ["Structural design", "Print-ready artwork", "Label & carton systems", "Retail-ready mockups"]
+    },
+    {
+      "title": "Social Media Creatives",
+      "swatch": "sunbeam",
+      "description": "Templated, on-brand creative systems for feeds, stories and ads — built so your team can keep posting long after we hand it over.",
+      "deliverables": ["Content templates", "Campaign creative", "Motion snippets", "Posting playbooks"]
+    }
+  ],
+  "works": [
+    { "client": "Terra & Co.", "category": "Packaging", "description": "A coffee packaging system built around single-origin storytelling — six SKUs, one shelf presence.", "size": "large" },
+    { "client": "Nova Skincare", "category": "Branding", "description": "Full identity relaunch for a clinical skincare line, from wordmark to unboxing.", "size": "medium" },
+    { "client": "Bloomhouse", "category": "Social Media Creatives", "description": "A flexible Instagram template system that grew engagement without growing the design team.", "size": "medium" },
+    { "client": "Ember Studio", "category": "Branding", "description": "Identity and signage for an independent pottery studio, warm and hand-built by design.", "size": "small" },
+    { "client": "Rill Juice Co.", "category": "Packaging", "description": "Cold-pressed juice bottles designed to read clearly from three metres away.", "size": "small" },
+    { "client": "Fable & Fern", "category": "Social Media Creatives", "description": "Launch campaign creative across Reels, stories and paid social for a plant-care brand.", "size": "large" }
+  ],
+  "testimonials": [
+    { "quote": "Pixcel didn't just design a logo, they gave us a whole language for the brand. Every packaging decision since has been easy because the system already knows what it wants to say.", "name": "Ayesha Rahman", "role": "Founder, Terra & Co." },
+    { "quote": "We handed them a half-formed idea and three competitor screenshots. They came back with something none of us had thought of and it was obviously right.", "name": "Devan Mehta", "role": "Co-founder, Nova Skincare" },
+    { "quote": "The social templates are the first design system our marketing team has actually kept using six months later. That's the real test.", "name": "Priya Nambiar", "role": "Marketing Lead, Bloomhouse" }
+  ]
+}
